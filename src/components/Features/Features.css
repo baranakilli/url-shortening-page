@@ -1,0 +1,152 @@
+.features ul {
+  position: relative;
+  z-index: 1;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 87.2%;
+}
+
+.features li {
+  margin: auto;
+}
+
+.features-heading h2 {
+  margin-bottom: 1.6rem;
+  color: var(--n-very-dark-blue);
+}
+
+.features-heading p {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.11px;
+  margin: auto;
+  margin-bottom: 0.4rem;
+  max-width: 54rem;
+}
+
+ul > li + li {
+  padding-top: 0.4rem;
+}
+
+.vertical-line {
+  border: none;
+  border-left: 0.8rem solid var(--p-cyan);
+  height: calc(100% - 4.4rem);
+  transform: translateX(-50%);
+  position: absolute;
+  top: 4.4rem;
+  left: 50%;
+  z-index: -1;
+}
+
+.feature-logo {
+  background-color: var(--p-dark-violet);
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50%);
+  height: 8.8rem;
+  width: 8.8rem;
+}
+
+.feature-content {
+  background-color: white;
+  border-radius: 5px;
+  padding: 7.7rem 3.2rem 3.2rem;
+  min-height: 26.7rem;
+}
+
+.feature-content h3 {
+  margin-bottom: 1.2rem;
+}
+
+.feature-content p {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+}
+
+@media screen and (min-width: 700px) {
+  .features li {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  ul > li + li {
+    padding-top: 0;
+  }
+
+  .features-heading {
+    margin-top: 4rem;
+  }
+
+  .features-heading h2 {
+    font-size: 4rem;
+    letter-spacing: -1px;
+    margin-bottom: 1.8rem;
+  }
+
+  .features-heading p {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+
+  .vertical-line {
+    border-top: 0.8rem solid var(--p-cyan);
+    border-left: 0;
+    height: 0;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 57%;
+    z-index: -1;
+  }
+
+  .features ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.6rem;
+  }
+
+  .features li {
+    width: 30%;
+    max-width: 35rem;
+  }
+
+  .features li:nth-child(2) {
+    transform: translateY(-44px);
+  }
+
+  .features li:nth-child(4) {
+    transform: translateY(44px);
+  }
+
+  .feature-logo {
+    transform: translate(-112%, 50%);
+  }
+
+  .feature-content {
+    min-height: 34.4rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .feature-content {
+    min-height: 28.5rem;
+  }
+}
+
+@media screen and (min-width: 1275px) {
+  .features li {
+    width: 35%;
+    max-width: 35rem;
+  }
+
+  .feature-content {
+    min-height: 26.7rem;
+  }
+}

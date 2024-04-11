@@ -1,0 +1,109 @@
+.banner {
+  overflow: hidden;
+  margin-bottom: 16.8rem;
+}
+
+.banner img {
+  width: 511px;
+  margin: 2.3rem 0 2.3rem 2.4rem;
+}
+
+.banner-content {
+  margin: 0 auto;
+  width: 87.2%;
+}
+
+.banner-content h1 {
+  margin: 1.5rem 0;
+}
+
+.banner-content p {
+  margin-bottom: 3.2rem;
+  line-height: 3rem;
+}
+
+/* BURASI BİRAZ ACELEYE GELDİ ABSLOUTELARA ALTERNATİF ARA VE STYLE DİZİLME SIRALARINI KONTROL ET GENEL GÖZDEN GEÇİR VE NELER YAPTIĞINI HATIRLA */
+@media screen and (min-width: 1000px) {
+  .banner {
+    position: relative;
+    text-align: left;
+    margin: 7.8rem 0 9.5rem;
+    height: 54rem;
+  }
+
+  .banner img {
+    min-width: 600px;
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    right: -50px;
+  }
+
+  .banner-content {
+    margin-left: 9.5rem;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 56.5rem;
+  }
+
+  .banner-content h1 {
+    font-size: 6rem;
+    line-height: 1.125;
+    letter-spacing: -2px;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .banner-content p {
+    font-size: 1.9rem;
+    letter-spacing: 0.15px;
+    margin-bottom: 3.8rem;
+    max-width: 36rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner img {
+    min-width: 633px;
+  }
+
+  .banner-content {
+    margin-left: 11.5rem;
+  }
+
+  .banner-content h1 {
+    font-size: 7rem;
+  }
+
+  .banner-content p {
+    max-width: 46rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .banner img {
+    min-width: 733px;
+    right: -123px;
+  }
+
+  .banner-content {
+    margin-left: 16.6rem;
+  }
+
+  .banner-content h1 {
+    font-size: 8rem;
+  }
+
+  .banner-content p {
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    max-width: 54rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .banner img {
+    min-width: 733px;
+    right: 5vw;
+  }
+}

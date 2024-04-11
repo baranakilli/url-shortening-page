@@ -1,0 +1,39 @@
+.call-to-action {
+  background-color: var(--p-dark-violet);
+  background-image: url('../../assets/bg-boost-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin: 8rem 0 1.2rem;
+  padding: 9rem 0;
+}
+
+.call-to-action h2 {
+  color: white;
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 900px) {
+  .call-to-action {
+    background-image: url('../../assets/bg-boost-desktop.svg');
+    margin-bottom: 0;
+    padding: 5.7rem 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .call-to-action {
+    margin-top: 14.4rem;
+  }
+
+  .call-to-action h2 {
+    font-size: 4rem;
+    letter-spacing: -1px;
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .call-to-action {
+    margin-top: 16.4rem;
+  }
+}
