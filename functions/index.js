@@ -1,17 +1,28 @@
-/**
- * Import function triggers from their respective submodules:
- *
- * const {onCall} = require("firebase-functions/v2/https");
- * const {onDocumentWritten} = require("firebase-functions/v2/firestore");
- *
- * See a full list of supported triggers at https://firebase.google.com/docs/functions
- */
+const {onRequest} = require("firebase-functions/v2/https");
+const cors = require("cors")({origin: true});
+const fetch = require("node-fetch");
 
+exports.postInputUrl = onRequest((request, response) => {
+  cors(request, response, () => {
+    console.log("Request Body:", request.body);
+    const url = "https://cleanuri.com/api/v1/shorten";
 
-// Create and deploy your first functions
-// https://firebase.google.com/docs/functions/get-started
-
-// exports.helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams({
+        url: request.body.url,
+      }),
+    })
+        .then((res) => res.json())
+        .then((data) => {
+          response.json(data);
+        })
+        .catch((err) => {
+          console.error(err);
+          response.status(500).send("Error");
+        });
+  });
+});

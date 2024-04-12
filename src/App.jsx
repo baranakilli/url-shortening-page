@@ -25,7 +25,7 @@ function App() {
   };
 
   const handleShortenUrl = () => {
-    fetch('https://cleanuri.com/api/v1/shorten', {
+    fetch('https://postinputurl-yfg3ws4jha-uc.a.run.app', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
