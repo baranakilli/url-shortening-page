@@ -19,7 +19,7 @@ footer h4 {
   margin-bottom: 4rem;
 }
 
-.footer-column span{
+.footer-column span {
   color: var(--n-gray);
   cursor: pointer;
   display: block;
@@ -37,7 +37,7 @@ footer h4 {
   margin-top: 1rem;
 }
 
-.footer-social-links{
+.footer-social-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,9 +74,14 @@ footer h4 {
     margin-bottom: 0;
   }
 
-  .footer-social-links{
+  .footer-social-links {
     margin: 0;
     padding: 0;
-    transform: translateY(-25%);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-social-links img {
+    cursor: pointer;
   }
 }
