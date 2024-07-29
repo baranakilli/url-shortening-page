@@ -1,5 +1,5 @@
 {
-  "name": "Shortly | URL Shortening App",
+  "name": "Shortly",
   "short_name": "Shortly",
   "icons": [
     {
@@ -25,7 +25,6 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": "/",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone"
